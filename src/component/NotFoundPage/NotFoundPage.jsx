@@ -18,7 +18,16 @@ function PageNotFound(props) {
             The page you are looking for might be removed or is temporarily
             unavailable, click hompage button &darr; to go back.
           </div>
-          <button className='notFound_body_button'>back to homepage</button>
+          <button
+            className='notFound_body_button'
+            onClick={() =>
+              window.location.replace(
+                'https://github.com/studiousTribe/pageNotFound'
+              )
+            }
+          >
+            back to homepage
+          </button>
         </article>
       </div>
     </section>
